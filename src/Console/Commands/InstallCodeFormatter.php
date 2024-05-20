@@ -56,6 +56,8 @@ class InstallCodeFormatter extends Command
         copy(__DIR__.'/../../../stubs/code-formatter/pint.json', base_path('pint.json'));
         copy(__DIR__.'/../../../stubs/code-formatter/prettier.config.cjs', base_path('prettier.config.cjs'));
 
+        $this->components->info('Installing and building Node dependencies.');
+
         $this->runCommands(['npm install', 'npm run build']);
 
         $this->runCommands([
