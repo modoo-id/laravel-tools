@@ -11,6 +11,7 @@ class LaravelToolsServiceProvider extends ServiceProvider
         $this->commands([
             \ModooId\LaravelTools\Console\Commands\MakeAction::class,
             \ModooId\LaravelTools\Console\Commands\InstallCodeFormatter::class,
+            \ModooId\LaravelTools\Console\Commands\InstallSingleSignOn::class,
         ]);
     }
 }
