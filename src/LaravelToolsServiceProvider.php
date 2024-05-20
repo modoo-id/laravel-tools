@@ -9,7 +9,8 @@ class LaravelToolsServiceProvider extends ServiceProvider
     public function register()
     {
         $this->commands([
-            \ModooId\LaravelTools\Console\Commands\MakeAction::class
+            \ModooId\LaravelTools\Console\Commands\MakeAction::class,
+            \ModooId\LaravelTools\Console\Commands\InstallCodeFormatter::class,
         ]);
     }
 }
